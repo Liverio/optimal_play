@@ -11,8 +11,6 @@ import matplotlib.pyplot as plt
 
 from simulator import simulate
 
-DEBUG = 0
-
 def main():
     # number of simulations
     SIMS_NO = 1000000
@@ -25,8 +23,9 @@ def main():
     P2_bluff_freq = 1 / (pot_size + 1); 
     
     print('Pot = ', pot_size)
-    print('P1 call frequency  = ', round(100 * P1_call_freq, 1), '%\n')
-    print('P2 bluff frequency = ', round(100 * P2_bluff_freq, 1), '%')
+    print('Optimal values:')
+    print('\tP1 call frequency  = ', round(100 * P1_call_freq, 1), '%\n')
+    print('\tP2 bluff frequency = ', round(100 * P2_bluff_freq, 1), '%')
     
     
     # P1 varies his strategy 

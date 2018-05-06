@@ -2,7 +2,7 @@
 """
 Created on Sun Apr 22 01:03:51 2018
 
-@author: Liverium
+@author: Liverio
 """
 
 import random

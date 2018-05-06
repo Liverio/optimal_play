@@ -2,7 +2,7 @@
 """
 Created on Sat Apr 21 20:17:05 2018
 
-@author: Liverium
+@author: Liverio
 """
 import random
 
@@ -69,7 +69,7 @@ def outcome(player, P1_hand, P1_action, P2_hand, P2_action, pot_size):
             if P2_hand > P1_hand:
                return -1
             
-            # x-c and X wins
+            # x-c and P1 wins
             return pot_size + 1
     else:
         if P2_action == CHECK:

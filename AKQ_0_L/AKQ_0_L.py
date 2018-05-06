@@ -2,7 +2,7 @@
 """
 Created on Sat Apr 21 00:29:38 2018
 
-@author: Liverium
+@author: Liverio
 """
 import math
 import numpy as np

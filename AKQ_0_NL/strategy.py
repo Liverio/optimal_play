@@ -58,36 +58,36 @@ def outcome(player, P1_hand, P1_action, P2_hand, P2_action, pot_size, bet_size):
             if P2_hand > P1_hand:
                 return 0
                 
-            # x-x and X wins
+            # x-x and P1 wins
             return pot_size
             
         if P2_action == BET:
             if P1_action == FOLD:
                 return 0;
             
-            # x-c and X losses
+            # x-c and P1 losses
             if P2_hand > P1_hand:
                return -(bet_size * pot_size)
             
-            # x-c and X wins
+            # x-c and P1 wins
             return pot_size + bet_size * pot_size
     else:
         if P2_action == CHECK:
             if P2_hand > P1_hand:
                 return pot_size
             
-            # x-x and X wins
+            # x-x and P2 losses
             return 0
         
         if P2_action == BET:
             if P1_action == FOLD:
                 return pot_size;
             
-            # b-c and X losses
+            # b-c and P2 wins
             if P2_hand > P1_hand:
                 return pot_size + bet_size * pot_size
             
-            # b-c and X wins
+            # b-c and P2 losses
             return -(bet_size * pot_size)
 
     
